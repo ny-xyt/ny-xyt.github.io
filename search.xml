@@ -4,6 +4,51 @@
   
     
     <entry>
+      <title>电路学习</title>
+      <link href="/2023/05/02/%E7%94%B5%E8%B7%AF/"/>
+      <url>/2023/05/02/%E7%94%B5%E8%B7%AF/</url>
+      
+        <content type="html"><![CDATA[<p>以下笔记为个人学习用</p><p>图片来源于up主【电路 石群老师主讲【完整版，带课件】适用大学学习，期末/考研备考 电路分析基础，电路分析】<a href="https://www.bilibili.com/video/BV1Tj411G7z2?p=23&amp;vd_source=34cc784364a3a202396945ed693246e0">https://www.bilibili.com/video/BV1Tj411G7z2?p=23&amp;vd_source=34cc784364a3a202396945ed693246e0</a></p><h1 id="一阶电路和二阶电路"><a href="#一阶电路和二阶电路" class="headerlink" title="一阶电路和二阶电路"></a>一阶电路和二阶电路</h1><p><img src=".assert/image-20230502101659019.png" alt="image-20230502101659019"></p><p><img src=".assert/image-20230502102344772.png" alt="image-20230502102344772"></p><p>工程实际中在切断电容或电感电路时会出现过电压和过电流现象</p><p><img src=".assert/image-20230502103046984.png" alt="image-20230502103046984"></p><p><img src=".assert/image-20230502103730240.png" alt="image-20230502103730240"></p><p><img src=".assert/image-20230502105102089.png" alt="image-20230502105102089"></p><p><img src=".assert/image-20230502110712917.png" alt="image-20230502110712917"></p><p><img src=".assert/image-20230502113708753.png" alt="image-20230502113708753"></p><h2 id="一阶电路的零输入响应"><a href="#一阶电路的零输入响应" class="headerlink" title="一阶电路的零输入响应"></a>一阶电路的零输入响应</h2><p><img src=".assert/image-20230502114903695.png" alt="image-20230502114903695"></p><p><img src=".assert/image-20230502114924782.png" alt="image-20230502114924782"></p><p><img src=".assert/image-20230502115416894.png" alt="image-20230502115416894"></p><p><img src="https://cdn.jsdelivr.net/gh/ny-xyt/picture@main/img/image-20230502140544264.png" alt="image-20230502140544264"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 大学学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/05/01/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2023/05/01/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<p><img src=".assert/image-20230501194324562.png" alt="image-20230501194324562"></p><p><img src=".assert/image-20230501195655049.png" alt="image-20230501195655049"></p><p><img src=".assert/image-20230501195714148.png" alt="image-20230501195714148"></p><p><img src=".assert/image-20230501195752853.png" alt="image-20230501195752853"></p><p><img src=".assert/image-20230501195846290.png" alt="image-20230501195846290"></p><p><img src=".assert/image-20230501201611999.png" alt="image-20230501201611999"></p><p><img src=".assert/image-20230501201631403.png" alt="image-20230501201631403"></p><p><img src=".assert/image-20230501201657731.png" alt="image-20230501201657731"></p><p><img src=".assert/image-20230501201751309.png" alt="image-20230501201751309"></p><p><img src=".assert/image-20230501201834636.png" alt="image-20230501201834636"></p><p><img src=".assert/image-20230501202810026.png" alt="image-20230501202810026"></p><p><img src=".assert/image-20230501203300933.png" alt="image-20230501203300933"></p><p><img src=".assert/image-20230501204422898.png" alt="image-20230501204422898"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2023/04/27/gazebo/"/>
+      <url>/2023/04/27/gazebo/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ROS3</title>
       <link href="/2023/04/12/ROS3/"/>
       <url>/2023/04/12/ROS3/</url>
