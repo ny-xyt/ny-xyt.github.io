@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="zh-CN"><head><link rel="stylesheet" type="text/css" href="/css/nerd.css"><link rel="stylesheet" type="text/css" href="/css/loadingcar.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-swiper-marcus/lib/skills.min.css"><link rel="preload" as="style" type="text/css" href="/css/nerd.css"><link rel="preload" as="font" type="font/ttf" href="/fonts/font.woff2" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><script async="" data-pjax="" src="/js/custom.js"></script><script src="/js/random.js"></script><script async="" src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script><script async="" src="https://cdn.jsdelivr.net/npm/element-ui@2.15.6/lib/index.js"></script><script async="" data-pjax="" src="/js/linksbar.js"></script><script async="" src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/carousel-touch.min.js"></script><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>冰达Nano Omni小车3 | nieyuan's home</title><meta name="author" content="nieyuan"><meta name="copyright" content="nieyuan"><meta name="format-detection" content="telephone=no"><meta name="theme-color"><meta name="description" content="Opencv各项指令机器人端xsheel输入 1roslaunch robot_vision robot_camera.launch 再开一终端打开 ————人脸识别1roslaunch robot_vision face_detection.launch ————-边缘检测1roslaunnch robot_vision edge_detection.launch 边缘检测可以设置三个参数，可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="冰达Nano Omni小车3">
+<meta property="og:url" content="http://example.com/2023/05/08/bingdacar3/index.html">
+<meta property="og:site_name" content="nieyuan&#39;s home">
+<meta property="og:description" content="Opencv各项指令机器人端xsheel输入 1roslaunch robot_vision robot_camera.launch 再开一终端打开 ————人脸识别1roslaunch robot_vision face_detection.launch ————-边缘检测1roslaunnch robot_vision edge_detection.launch 边缘检测可以设置三个参数，可以">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/6403a054f144a0100779cd9f.jpg">
+<meta property="article:published_time" content="2023-05-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-05-12T04:45:21.290Z">
+<meta property="article:author" content="nieyuan">
+<meta property="article:tag" content="ros">
+<meta property="article:tag" content="ubunttu">
+<meta property="article:tag" content="opencv">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/6403a054f144a0100779cd9f.jpg"><link rel="shortcut icon" href="https://ezgx.site/img/avatar.png"><link rel="canonical" href="http://example.com/2023/05/08/bingdacar3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.bilicdn.tk/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.bilicdn.tk/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.bilicdn.tk/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.bilicdn.tk/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '冰达Nano Omni小车3',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-12 12:45:21'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism.css" type="text/css"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+setTimeout(function(){preloader.endLoading();}, 3600);
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><link rel="stylesheet" href="/css/loading.css"/><script src="https://cdn.bilicdn.tk/npm/pace-js/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="menus_items"><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 本站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/"><i class="fa-fw fas fa-house-user"></i><span> 首页</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-box-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 链环</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/goodsites/"><i class="fa-fw fas fa-star"></i><span> 站长推荐</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 找我</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/authorqq/"><i class="fa-fw fab fa-qq"></i><span> 博主QQ</span></a></li><li><a class="site-page child" href="/authorwechat/"><i class="fa-fw fab fa-weixin"></i><span> 博主微信</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://github.com/ezgx"><i class="fa-fw fab fa-github"></i><span> github</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/cc/"><i class="fa-fw fab fa-creative-commons"></i><span> 协议</span></a></li><li><a class="site-page child" href="/2023/dimension"><i class="fa-fw fas fa-wand-magic-sparkles"></i><span> 主题</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/kongbai/"><i class="fa-fw fas fa-paw"></i><span> 镇站神兽</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://pic.imgdb.cn/item/6403a054f144a0100779cd9f.jpg')"><nav id="nav"><div id="toggle-menu"><a class="site-page"><i class="fas fa-grip-vertical"></i></a></div><span id="blog_name"><a id="site-name" href="/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.tianli0.top/%E9%A6%96%E9%A1%B5.png" width="50" height="50"/><div class="title">nieyuan's home</div><i class="fa-solid fa-house"></i></a></span><div class="mask-name-container"><center id="name-container"><a id="page-name" onclick="btf.scrollToDest(0,500)"></a></center><div class="nav-button" id="nav-totop"><a class="totopbtn"><i class="fas fa-arrow-up"></i><span id="percent" onclick="btf.scrollToDest(0,500)">0</span></a></div></div><div id="menus"><div class="nav-button" id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="nav-button console-button"><a class="link" onclick="heo.showConsole()"><i class="fas fa-circle-plus fa-xl fa-beat"></i></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 本站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/"><i class="fa-fw fas fa-house-user"></i><span> 首页</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-box-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 链环</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/goodsites/"><i class="fa-fw fas fa-star"></i><span> 站长推荐</span></a></li><li><a class="site-page child" href="/atom.xml"><i class="fa-fw fas fa-rss"></i><span> RSS</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 找我</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/comments/"><i class="fa-fw fas fa-comments"></i><span> 留言</span></a></li><li><a class="site-page child" href="/authorqq/"><i class="fa-fw fab fa-qq"></i><span> 博主QQ</span></a></li><li><a class="site-page child" href="/authorwechat/"><i class="fa-fw fab fa-weixin"></i><span> 博主微信</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://github.com/ezgx"><i class="fa-fw fab fa-github"></i><span> github</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/cc/"><i class="fa-fw fab fa-creative-commons"></i><span> 协议</span></a></li><li><a class="site-page child" href="/2023/dimension"><i class="fa-fw fas fa-wand-magic-sparkles"></i><span> 主题</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li><li><a class="site-page child" href="/kongbai/"><i class="fa-fw fas fa-paw"></i><span> 镇站神兽</span></a></li></ul></div></div></div></nav><div id="post-info"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ros/">ros</a><a class="post-meta__tags" href="/tags/ubunttu/">ubunttu</a><a class="post-meta__tags" href="/tags/opencv/">opencv</a></div><h1 class="post-title">冰达Nano Omni小车3</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-05-07T16:00:00.000Z" title="发表于 2023-05-08 00:00:00">2023-05-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-12T04:45:21.290Z" title="更新于 2023-05-12 12:45:21">2023-05-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span></div></div></div></header><div id="console"><div class="close-btn" onclick="heo.hideConsole()"><i class="fas fa-circle-xmark"></i></div><div class="console-webinfo"><div class="console-webinfo-card"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line fa-bounce"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name"><i class="fas fa-folder-open fa-beat"></i><div class="text">文章总数</div></div><div class="item-count">35</div></div><div class="webinfo-item"><div class="item-name"><i class="fas fa-clock fa-shake"></i><div class="text">建站天数</div></div><div class="item-count" id="runtimeshow" data-publishDate="2022-08-12T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name"><i class="fas fa-pen-to-square fa-beat"></i><div class="text">全站字数</div></div><div class="item-count">40.5k</div></div><div class="webinfo-item"><div class="item-name"><i class="fas fa-upload fa-shake"></i><div class="text">最后更新</div></div><div class="item-count" id="last-push-date" data-lastPushDate="2023-05-12T04:48:21.091Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="toRandomPost()" title="随机文章"><i class="fas fa-shuffle fa-beat" style="font-size: 1rem;"></i></a></div><div class="console-btn-item"><a class="assist-btn" target="_blank" rel="noopener" href="https://travellings.cn/go.html" title="友链接力"><i class="fas fa-bus fa-beat" style="font-size: 1rem;"></i></a></div><div class="console-btn-item"><a class="assist-btn" onclick="btf.scrollToDest(0,500), heo.hideConsole()"><i class="fas fa-arrows-up-to-line fa-beat" style="font-size: 1rem;"></i></a></div></div><div class="console-mask"></div></div><main class="layout" id="content-inner"><div id="post"><div class="dimension-toc"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Opencv%E5%90%84%E9%A1%B9%E6%8C%87%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">Opencv各项指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text">————人脸识别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%94%E2%80%94%E2%80%94%E2%80%94-%E8%BE%B9%E7%BC%98%E6%A3%80%E6%B5%8B"><span class="toc-number">1.2.</span> <span class="toc-text">————-边缘检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%94%E2%80%94%E2%80%94%E2%80%94%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E7%B1%BB"><span class="toc-number">1.3.</span> <span class="toc-text">————结构分析类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#opencv-%E8%BF%90%E5%8A%A8%E5%88%86%E6%9E%90%E7%B1%BB"><span class="toc-number">1.4.</span> <span class="toc-text">opencv-运动分析类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#opencv%E2%80%94%E5%AF%B9%E8%B1%A1%E5%88%86%E5%89%B2%E7%B1%BB"><span class="toc-number">1.5.</span> <span class="toc-text">opencv—对象分割类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#opencv%E2%80%94%E9%A2%9C%E8%89%B2%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.6.</span> <span class="toc-text">opencv—颜色过滤器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#opencv-%E7%AE%80%E5%8D%95%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E7%B1%BB"><span class="toc-number">1.7.</span> <span class="toc-text">opencv-简单图像处理类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E8%A7%89%E5%AE%9E%E4%BE%8B-%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A7%86%E8%A7%89%E5%B7%A1%E7%BA%BF"><span class="toc-number">1.8.</span> <span class="toc-text">视觉实例-机器人视觉巡线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%86%E8%A7%89%E5%AE%9E%E4%BE%8B-%E8%B0%83%E6%95%B4%E5%B7%A1%E7%BA%BF%E9%A2%9C%E8%89%B2"><span class="toc-number">1.9.</span> <span class="toc-text">视觉实例-调整巡线颜色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E5%92%8C%E6%95%B0%E6%8D%AE%E6%9F%A5%E7%9C%8B"><span class="toc-number">1.10.</span> <span class="toc-text">启动激光雷达和数据查看</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E8%A1%8C%E6%BF%80%E5%85%89SLAM"><span class="toc-number">1.11.</span> <span class="toc-text">机器人运行激光SLAM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E8%A1%8C%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E5%AF%BC%E8%88%AA%E5%92%8C%E9%81%BF%E9%9A%9C"><span class="toc-number">1.12.</span> <span class="toc-text">进行激光雷达导航和避障</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BF%80%E5%85%89SLAM%E5%BB%BA%E5%9B%BE%E7%AE%97%E6%B3%95%E5%88%87%E6%8D%A2"><span class="toc-number">1.13.</span> <span class="toc-text">激光SLAM建图算法切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E8%B7%AF%E5%BE%84%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E5%88%87%E6%8D%A2"><span class="toc-number">1.14.</span> <span class="toc-text">局部路径规划算法切换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E5%9C%B0%E5%9B%BE%E5%9C%BA%E6%99%AF%E5%AF%BC%E8%88%AA%E5%B9%B6%E5%BB%BA%E5%9B%BE"><span class="toc-number">1.15.</span> <span class="toc-text">无地图场景导航并建图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stage%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BB%BF%E7%9C%9F%E5%99%A8%E4%BD%BF%E7%94%A8"><span class="toc-number">1.16.</span> <span class="toc-text">stage机器人仿真器使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stage%E4%B8%AD%E4%BB%BF%E7%9C%9F%E5%BB%BA%E5%9B%BE-%E5%AF%BC%E8%88%AA"><span class="toc-number">1.17.</span> <span class="toc-text">stage中仿真建图&#x2F;导航</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%82%B9%E5%AF%BC%E8%88%AA"><span class="toc-number">1.18.</span> <span class="toc-text">机器人多目标点导航</span></a></li></ol></li></ol></div></div></div><article class="post-content" id="article-container"><h1 id="Opencv各项指令"><a href="#Opencv各项指令" class="headerlink" title="Opencv各项指令"></a>Opencv各项指令</h1><p>机器人端xsheel输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision robot_camera.launch</span><br></pre></td></tr></table></figure>
+<p>再开一终端打开</p>
+<h2 id="————人脸识别"><a href="#————人脸识别" class="headerlink" title="————人脸识别"></a>————人脸识别</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision face_detection.launch</span><br></pre></td></tr></table></figure>
+<h2 id="————-边缘检测"><a href="#————-边缘检测" class="headerlink" title="————-边缘检测"></a>————-边缘检测</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunnch robot_vision edge_detection.launch</span><br></pre></td></tr></table></figure>
+<p>边缘检测可以设置三个参数，可以这么输入,参数不同边框模糊度不同</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision edge_detection.launch edge_type:=2</span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision hough_lines.launch  //实现物理环境直线检测</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision hough_circles.launch</span><br><span class="line">//实现圆检测</span><br></pre></td></tr></table></figure>
+<h2 id="————结构分析类"><a href="#————结构分析类" class="headerlink" title="————结构分析类"></a>————结构分析类</h2><p>查找轮廓，机器人端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision find_contours.launch</span><br></pre></td></tr></table></figure>
+<p>动态调整参数使轮廓清晰</p>
+<p>在ubuntu端输入启动rqt工具</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun rqt_reconfigure rqt_reconfigure</span><br></pre></td></tr></table></figure>
+<p>通用轮廓检测</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision general_contours.launch </span><br></pre></td></tr></table></figure>
+<p> 凸包检测(用最小面积围一个东西)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision convex_hull.launch</span><br></pre></td></tr></table></figure>
+<p>在ubuntu端开启一个图像计算应用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision contour_moments.launch debug_view:=true (debug_view:=true 是参数按tap补全,该操作会打开一个图像化窗口所以只能在虚拟机端启动)</span><br></pre></td></tr></table></figure>
+<p>打印该图像数据内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rostopic echo /contour_moments/mounents</span><br></pre></td></tr></table></figure>
+<p>虚拟机端开启图形化工具、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rqt_image_view</span><br></pre></td></tr></table></figure>
+<h2 id="opencv-运动分析类"><a href="#opencv-运动分析类" class="headerlink" title="opencv-运动分析类"></a>opencv-运动分析类</h2><p>启动一个角点检测xsheel</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision goodfeature_track.launch</span><br></pre></td></tr></table></figure>
+<p>启动一个物体跟踪ubuntu端</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision camshift.launch</span><br></pre></td></tr></table></figure>
+<p> fback稠密光流xsheel</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision fback_flow.launch</span><br></pre></td></tr></table></figure>
+<p>lk稠密光流</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision lk_flow.launch</span><br></pre></td></tr></table></figure>
+<h2 id="opencv—对象分割类"><a href="#opencv—对象分割类" class="headerlink" title="opencv—对象分割类"></a>opencv—对象分割类</h2><p>启动一个对象分割节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision segment_object.launch</span><br></pre></td></tr></table></figure>
+<p>分水岭分割方法ubuntu端启动</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision watershed_segmentation.launch debug_view:=true</span><br></pre></td></tr></table></figure>
+<h2 id="opencv—颜色过滤器"><a href="#opencv—颜色过滤器" class="headerlink" title="opencv—颜色过滤器"></a>opencv—颜色过滤器</h2><p>启动颜色过滤器节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision rgb_color_filter.launch</span><br></pre></td></tr></table></figure>
+<p>动态调参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun rqt_reconfigure rqt_reconfigure</span><br></pre></td></tr></table></figure>
+<p> 色彩描述方法</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/ny-xyt/picture@main/%E5%9B%BE%E5%83%8Fimage-20230511171725841.png" alt="image-20230511171725841"></p>
+<p>HSV色相饱和度</p>
+<p>HLS亮度 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision his_color_filter.launch</span><br></pre></td></tr></table></figure>
+<h2 id="opencv-简单图像处理类"><a href="#opencv-简单图像处理类" class="headerlink" title="opencv-简单图像处理类"></a>opencv-简单图像处理类</h2><p>opencv中数据和ros相互转换的一个demo</p>
+<p>在ubuntu端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun robot_vision cv_bridge_test.py</span><br></pre></td></tr></table></figure>
+<p> 图像叠加ubuntu输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision adding_images.launch</span><br></pre></td></tr></table></figure>
+<p> 在xsheel端启动虚拟摄像头(从本地读取一张图像后再通过ros的话题数据形式给发布出来)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vison fake_camera.launch</span><br></pre></td></tr></table></figure>
+<p> 启动动态调参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun rqt_reconfigure rqt_reconfigure</span><br></pre></td></tr></table></figure>
+<h2 id="视觉实例-机器人视觉巡线"><a href="#视觉实例-机器人视觉巡线" class="headerlink" title="视觉实例-机器人视觉巡线"></a>视觉实例-机器人视觉巡线</h2><p>启动巡线节点xsheel</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision line_follow.launch</span><br></pre></td></tr></table></figure>
+<p>启动图形化界面</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rqt_image_view</span><br></pre></td></tr></table></figure>
+<p>启动底盘控制节点实现运动</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch base_control base_control.launch</span><br></pre></td></tr></table></figure>
+<h2 id="视觉实例-调整巡线颜色"><a href="#视觉实例-调整巡线颜色" class="headerlink" title="视觉实例-调整巡线颜色"></a>视觉实例-调整巡线颜色</h2><p>在xsheel端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision line_follow.launch test_mode:=true</span><br></pre></td></tr></table></figure>
+<p>通过test_mode可以看到中心的hsv参数</p>
+<p>启动动态调参</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun rqt_reconfigure rqt_reconfigure</span><br></pre></td></tr></table></figure>
+<p>调为白线hsv参数(h值上下限各给15,s的值上下限各给100,v的值上下限各给100)如果想要永久改变改变launch文件</p>
+<p>在xsheel端输入(这里采用vim编辑器修改)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">roscd robot_vision/launch</span><br><span class="line">vim line_follow.launch </span><br></pre></td></tr></table></figure>
+<p>在xheel输入开始运行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_vision line_follow.launch </span><br></pre></td></tr></table></figure>
+<p>启动底盘就开始运行了</p>
+<h2 id="启动激光雷达和数据查看"><a href="#启动激光雷达和数据查看" class="headerlink" title="启动激光雷达和数据查看"></a>启动激光雷达和数据查看</h2><p>启动激光雷达xsheel端</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation lidar.launch</span><br></pre></td></tr></table></figure>
+<p> 判断是否启动，查看话题列表rostopic list话题叫/scan</p>
+<p>ubuntu端启动rviz查看结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation lidar_rviz.launch</span><br></pre></td></tr></table></figure>
+<h2 id="机器人运行激光SLAM"><a href="#机器人运行激光SLAM" class="headerlink" title="机器人运行激光SLAM"></a>机器人运行激光SLAM</h2><p>机器人的激光slam应用启动</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_slam_laser.launch</span><br></pre></td></tr></table></figure>
+<p>查看结果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation slam_rviz.launch</span><br></pre></td></tr></table></figure>
+<p>运行键盘控制节点 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun telep_twist_keyboard telep_twist_keyboard.py</span><br></pre></td></tr></table></figure>
+<p>建立好地图保存地图数据在xsheel端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">roscd robot_navigation/maps</span><br><span class="line">rosrun map_server map_saver -f map//map为地图名</span><br></pre></td></tr></table></figure>
+<h2 id="进行激光雷达导航和避障"><a href="#进行激光雷达导航和避障" class="headerlink" title="进行激光雷达导航和避障"></a>进行激光雷达导航和避障</h2><p>机器人端运行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_navigation.launch</span><br></pre></td></tr></table></figure>
+<p>打开rviz</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation navigation_rviz.launch</span><br></pre></td></tr></table></figure>
+<p>rviz指定机器人初始位置</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/ny-xyt/picture@main/%E5%9B%BE%E5%83%8Fimage-20230511180835126.png" alt="image-20230511180835126"></p>
+<p>指定目标位置</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/ny-xyt/picture@main/%E5%9B%BE%E5%83%8Fimage-20230511180913442.png" alt="image-20230511180913442"></p>
+<h2 id="激光SLAM建图算法切换"><a href="#激光SLAM建图算法切换" class="headerlink" title="激光SLAM建图算法切换"></a>激光SLAM建图算法切换</h2><p>xsheel端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_slam_laser.launch slam_methods:=hector</span><br><span class="line">//slam_methods:=hector这个为参数hector为算法</span><br></pre></td></tr></table></figure>
+<h2 id="局部路径规划算法切换"><a href="#局部路径规划算法切换" class="headerlink" title="局部路径规划算法切换"></a>局部路径规划算法切换</h2><p>打开激光雷达 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_navigation.launch</span><br></pre></td></tr></table></figure>
+<p>需要一个局部路径来解决机器人运动学的特性和全局路径规划的差异(如阿克曼小车不能原地转向)</p>
+<p>切换局部路径 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_navigation.launch planner:=dwa</span><br></pre></td></tr></table></figure>
+<h2 id="无地图场景导航并建图"><a href="#无地图场景导航并建图" class="headerlink" title="无地图场景导航并建图"></a>无地图场景导航并建图</h2><p>在xsheel输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_slam_laser.launch planner:=teb</span><br></pre></td></tr></table></figure>
+<p>在ubuntu输入打开rviz</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation slam_rviz.launch</span><br></pre></td></tr></table></figure>
+<p>保存地图xsheel</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">roscd robot_navigation/maps</span><br><span class="line">rosrun map_server map_saver -f map//map为地图名</span><br></pre></td></tr></table></figure>
+<h2 id="stage机器人仿真器使用"><a href="#stage机器人仿真器使用" class="headerlink" title="stage机器人仿真器使用"></a>stage机器人仿真器使用</h2><p>stage用pc端</p>
+<p>这里将临时分布式通讯拆除掉</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gedit ~/.bashrc</span><br></pre></td></tr></table></figure>
+<p>修改之前文件保存</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bashrc</span><br></pre></td></tr></table></figure>
+<p>启动stage仿真器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_simulation simulation_one_robot.launch</span><br></pre></td></tr></table></figure>
+<h2 id="stage中仿真建图-导航"><a href="#stage中仿真建图-导航" class="headerlink" title="stage中仿真建图/导航"></a>stage中仿真建图/导航</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_slam_laser.launch simulation:=true(true参数只启动仿真器不启动硬件)</span><br></pre></td></tr></table></figure>
+<p> 可能报错</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/ny-xyt/picture@main/%E5%9B%BE%E5%83%8Fimage-20230512122504229.png" alt="image-20230512122504229"></p>
+<p>没安装map server</p>
+<p>安装输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install ros-melodic-map-server ros-melodic-amcl ros-melodic-gmapping</span><br></pre></td></tr></table></figure>
+<p>打开rviz</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation slam_rviz.launch</span><br></pre></td></tr></table></figure>
+<p>启动键盘遥控节点</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rosrun teleop_twist_keyboard teleop_twist_keyboard.py</span><br></pre></td></tr></table></figure>
+<p>启动导航仿真</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_navigation.launch simulation:=true open_rviz:=true</span><br></pre></td></tr></table></figure>
+<p>缺包问题和上面同理安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install ros-melodic-move-base ros-melodic-teb-local-planner</span><br></pre></td></tr></table></figure>
+<p>修改文件优化导航</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:/Users/34396/AppData/Roaming/Typora/typora-user-images/image-20230512123828409.png" alt="image-20230512123828409"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:/Users/34396/AppData/Roaming/Typora/typora-user-images/image-20230512123849486.png" alt="image-20230512123849486"></p>
+<h2 id="机器人多目标点导航"><a href="#机器人多目标点导航" class="headerlink" title="机器人多目标点导航"></a>机器人多目标点导航</h2><p>启动导航</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation robot_navigation.launch simulation:=true</span><br></pre></td></tr></table></figure>
+<p>启动多点导航</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation multi_points_navigation.launch</span><br></pre></td></tr></table></figure>
+<p>再开终端输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">roslaunch robot_navigation multi_navigation.launch</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/ny-xyt/picture@main/%E5%9B%BE%E5%83%8Fimage-20230511133830714.png" alt="image-20230511133830714"></p>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>冰达Nano Omni小车3</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="http://example.com/2023/05/08/bingdacar3/">http://example.com/2023/05/08/bingdacar3/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a" style="display: inline-block;width: 120px"><h>作者</h><div class="post-copyright-cc-info"><h>nieyuan</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 120px"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-05-08</h></div></div><div class="post-copyright-u" style="display: inline-block;width: 120px"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-05-12</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 120px"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="/cc/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY 4.0" href="/cc/">CC BY 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ros/">ros</a><a class="post-meta__tags" href="/tags/ubunttu/">ubunttu</a><a class="post-meta__tags" href="/tags/opencv/">opencv</a></div><div class="post_share"><div class="social-share" data-image="https://pic.imgdb.cn/item/6403a054f144a0100779cd9f.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.bilicdn.tk/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.bilicdn.tk/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://ezgx.site/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ezgx.site/img/wechatpay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/05/09/ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/64039f55f144a010077911cd.jpg" onerror="onerror=null;src='https://ezgx.site/img/404.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">ubuntu虚拟机</div></div></a></div><div class="next-post pull-right"><a href="/2023/05/08/bingdacar/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic.imgdb.cn/item/6403a0b0f144a010077a1889.png" onerror="onerror=null;src='https://ezgx.site/img/404.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">冰达Nano Omni小车1</div></div></a></div></nav></div></main><footer id="footer" style="background: transparent"><div id="footer_deal"><a class="deal_link" target="_blank" rel="noopener external nofollow" href="https://home.ezgx.site/" title="个人主页"><i class="fa-solid fa-compass"></i></a><a class="deal_link" target="_blank" rel="noopener external nofollow" href="https://res.abeim.cn/api/qq/?qq=3439640879" title="联系QQ"><i class="fa-brands fa-qq"></i></a><a class="deal_link" href="/authorwechat/" title="联系微信"><i class="fa-brands fa-weixin"></i></a><img class="footer_mini_logo entered loading" style="border-radius:50%" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onclick="btf.scrollToDest(0,500)" title="返回顶部"/><a class="deal_link" target="_blank" rel="noopener external nofollow" href="https://github.com/ny-xyt" title="Github"><i class="fa-brands fa-github"></i></a><a class="deal_link" href="/comments/" title="留言"><i class="fa-solid fa-comment"></i></a><a class="deal_link" target="_blank" rel="noopener external nofollow" href="mailto:3439640879@qq.com" title="发送邮件"><i class="fa-solid fa-envelope"></i></a></div><div id="Jay-footer"><div class="footer-group"><h3 class="footer-title">直达</h3><div class="footer-links"><a class="footer-item" target="_blank" rel="noopener" href="https://home.ezgx.site">个人主页</a><a class="footer-item" href="/about/">关于</a><a class="footer-item" href="/link/">友链</a><a class="footer-item" href="javascript:toRandomPost()">随机文章</a></div></div><div class="footer-group"><h3 class="footer-title">标签</h3><div class="footer-links"><a class="footer-item" href="/tags/%E6%95%99%E7%A8%8B/">📚教程</a><a class="footer-item" href="/categories/butterfly/">🦋魔改教程</a><a class="footer-item" href="/categories/%E5%89%8D%E7%AB%AF/">🌈捣鼓前端</a><a class="footer-item" href="/categories/%E7%94%9F%E6%B4%BB/">📙生活记录</a></div></div><div class="footer-group"><h3 class="footer-title">我的</h3><div class="footer-links"><a class="footer-item" href="/about/">关于</a><a class="footer-item" href="/archives/">归档</a><a class="footer-item" href="/tags/">标签</a><a class="footer-item" href="/categories/">分类</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" href="/cc/">版权协议</a><a class="footer-item" target="_blank" rel="noopener" href="https://github.com/Ezgx/hexo-theme-dimension/blob/main/LICENSE">主题协议</a><a class="footer-item" href="javascript:void(0)">占位</a><a class="footer-item" href="javascript:void(0)">占位</a></div></div></div><div id="footer-banner"><div class="footer-banner-links"><div class="footer-banner-left"><div class="footer-banner-left"><div id="footer-banner-tips">2023 ©nieyuan</div></div></div><div class="footer-banner-right"><a class="footer-banner-link" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" title="Hexo">框架：Hexo</a><a class="footer-banner-link">|</a><a class="footer-banner-link" href="/2023/dimension" title="theme">主题：dimension</a><a class="footer-banner-link">|</a><a class="footer-banner-link" href="/about/" title="about">关于</a><a class="footer-banner-link">|</a><a class="footer-banner-link cc" href="/cc/" title="cc协议"><i class="fab fa-creative-commons"></i><span>协议。</span></a></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.bilicdn.tk/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.bilicdn.tk/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="https://cdn.bilicdn.tk/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.bilicdn.tk/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="欢迎来到,Nieyuan的,博客" data-fontsize="16px" data-random="false" async="async"></script><script src="https://cdn.bilicdn.tk/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="hometop.js"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script></div><span id="fps"></span></body></html>
